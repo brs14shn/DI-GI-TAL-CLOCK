@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 
@@ -35,6 +36,7 @@ body{
     position: relative;
     height: 150px;
     width: 150px;
+    transform: rotate(45deg);
 }
 #time .circle svg circle{
     width: 50%;
@@ -44,6 +46,10 @@ body{
     stroke-width: 4;
     transform: translate(5px,5px);
 }
+#time .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 200;
+}
 
 
 #time div{
@@ -51,7 +57,7 @@ body{
     position: absolute;
     text-align: center;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 #time .app{
     position: relative;
